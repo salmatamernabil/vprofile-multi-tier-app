@@ -15,8 +15,8 @@ systemctl enable --now rabbitmq-server
 
 echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
 
-rabbitmqctl add_user test test
-rabbitmqctl set_user_tags test administrator
+rabbitmqctl add_user ${RMQ_USERNAME:-CHANGE_ME} ${RMQ_PASSWORD:-CHANGE_ME}
+rabbitmqctl set_user_tags ${RMQ_USERNAME:-CHANGE_ME} administrator
 
 systemctl restart rabbitmq-server
 
