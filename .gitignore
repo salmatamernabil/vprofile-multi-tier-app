@@ -1,0 +1,22 @@
+# Vagrant
+.vagrant/
+*.vmdk
+*.vdi
+*.vmx
+*.vmsd
+*.nvram
+target/
+build/
+*.class
+.idea/
+.vscode/
+*.iml
+*.log
+logs/
+*.pem
+*.key
+id_rsa
+id_ed25519
+private_key
+.env
+.env.*
