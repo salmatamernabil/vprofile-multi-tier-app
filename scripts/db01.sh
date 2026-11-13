@@ -14,8 +14,8 @@ systemctl enable mariadb
 
 # Configure database
 mysql -e "CREATE DATABASE accounts;"
-mysql -e "CREATE USER 'admin'@'%' IDENTIFIED BY 'admin123';"
-mysql -e "GRANT ALL PRIVILEGES ON accounts.* TO 'admin'@'%';"
+mysql -e "CREATE USER '${DB:-CHANGE_ME}'@'%' IDENTIFIED BY '${DB_PASSWORD:-CHANGE_ME}';"
+mysql -e "GRANT ALL PRIVILEGES ON accounts.* TO '${DB_USERNAME:-CHANGE_ME}'@'%';"
 mysql -e "FLUSH PRIVILEGES;"
 
 # Download project
