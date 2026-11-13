@@ -55,22 +55,12 @@ VProfile/
 │   ├── mc01.sh
 │   └── web01.sh
 └── screenshots/
-    ├── vagrant-status.png
-    ├── vprofile-login.png
-    ├── rabbitmq.png
-    └── application-running.png
+    ├── login.png
+    ├── APP.png
 ```
 
 *The structure above is illustrative; actual files may differ.*
 
-## Prerequisites
-
-- Windows host machine
-- VMware Workstation Player
-- Vagrant
-- Vagrant VMware utility/plugin as required by your installation
-- Git
-- Sufficient RAM and disk space for five virtual machines
 
 ## Deployment
 
